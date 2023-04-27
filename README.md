@@ -44,6 +44,8 @@ Sur ce site vous pouvez :
 - Acceder à une messagerie instantanée dans le forum
 - Réaliser une recherche sur les utilisateurs et les posts
 
+N.B. Le curseur modifié peut parfois tromper l'œil lorsqu'on clique sur un petit bouton comme par exemple le "modifier" dans un commentaire.
+
 ## (づ ￣ ³￣)づ Liens:
 - Retrouvez mon site en cliquant ici : https://mxrie.jsmb.fr/LevelUp/
 (N'hesitez pas, le site est responsive et accessible sur téléphone)
