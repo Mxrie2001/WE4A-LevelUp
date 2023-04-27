@@ -22,7 +22,7 @@
 ### Mise en place du projet:
 - Recuperer le projet et le decompresser
 - Creer une base de donnée au format utf8mb4_general_ci avec PHPMYADMIN
-- Importer le fichier BENEDUCI.sql à cette derniere: 6 tables doivent se creer (users, posts, likes, forum, commentaires, catégories). Ces tables sont déjà remplies.
+- Importer le fichier beneduci.sql à cette derniere: 6 tables doivent se creer (users, posts, likes, forum, commentaires, catégories). Ces tables sont déjà remplies.
 - Inserer le dossier BENEDUCI_SOLO dans le localhost
 - Changer les identifiants de connexion pour la base de données dans le dossier assets, dossier php, fichier connectDb.php
 - Aller sur le navigateur et lancer le projet sur le localhost
