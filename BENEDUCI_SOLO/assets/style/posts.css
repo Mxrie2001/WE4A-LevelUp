@@ -1,0 +1,316 @@
+/*--------------------------------------------------------------
+# Affichage d'un post
+--------------------------------------------------------------*/
+.posts{
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-justify: auto;
+    width: 40em;
+}
+
+.posts_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts img{
+    height: 15em;
+    margin: 1em;
+    max-width: 90%;
+}
+
+.posts p{
+    padding: 2em;
+    padding-top: 0;
+}
+
+.posts_header{
+    display: flex;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    align-items: center;
+}
+
+
+.posts_header div{
+    display: flex;
+    align-items: center;
+}
+
+.posts_header img{
+    margin: 1em;
+    background-color: white;
+    border-radius: 5em;
+    padding: 0.5em;
+    width: 4em;
+    height: 4em;
+}
+
+.linkAccount{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+}
+
+.blogUnit{
+    justify-content: space-between;
+}
+
+.morePostButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------
+# Affichage formulaire modification et ajout de nouveaux posts
+--------------------------------------------------------------*/
+.newPost, .modifyPost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.newPost form, .modifyPost form{
+    border-radius: 5px;
+    width: 40em;
+    border: 0.25em solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.newPost form div, .modifyPost form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em;
+}
+
+.newPost form div input, textarea, select, .modifyPost form div input{
+    width: 100%;
+}
+
+.transparent input{
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+button{
+    color: black;
+    background-color: #efa236;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    cursor:pointer;
+}
+
+.theme{
+    background-color: #efa236;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em!important;
+    margin-top: 0!important;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.headerTheme{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.headerTheme h2{
+    align-self: flex-start;
+}
+
+/*--------------------------------------------------------------
+# Affichage section commentaires posts
+--------------------------------------------------------------*/
+
+.post_comments{
+    width: 100%;
+    background-color: white;
+}
+
+.nocomm{
+    display: none;
+    text-align: center;
+    padding: 0!important;
+}
+
+.comment_header{
+    display: flex;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    align-items: center;
+    font-size: small;
+}
+
+.comment_header img{
+    background-color: white;
+    border-radius: 5em;
+    padding: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+
+.comment_header h2{
+    padding-right: 0.5em;
+}
+
+.comment_header p{
+    align-self: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.usercomment{
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25em;
+    margin-right: 1em;
+}
+
+.nosee, .post_comments{
+    display: none;
+}
+
+.commentButton{
+    align-self: flex-end;
+}
+
+.modifComment{
+    width: fit-content;
+    padding: 0;
+    display: flex;
+}
+
+.modifComment button{
+    margin: 0.25em;
+    color: #2f2d2f;
+}
+
+.comm_unit{
+    display: flex;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------
+# Affichage section "j'aime" posts
+--------------------------------------------------------------*/
+
+.jaime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jaime p{
+    padding: 0!important;
+}
+
+.bottom_post{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bottom_post button{
+    background-color: transparent!important;
+}
+
+.coeur i{
+    color: red;
+}
+
+.coeurnonCo{
+    color: black;
+    margin: 0.5em;
+}
+
+.formnewpost img{
+    width: 30em;
+}
+
+
+/*--------------------------------------------------------------
+# Adaptation à la taille de l'écran ordi -> tel
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .posts{
+        width: -webkit-fill-available;
+        width: -moz-available; 
+    }
+
+    .postdivContent{
+        width: -webkit-fill-available;
+        width: -moz-available; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerTheme{
+        justify-content: center;
+    }
+
+    .headerTheme h2{
+        font-size: 1.15em;
+    }
+
+    .usercomment{
+        font-size: 0.5em;
+        width: fit-content;
+    }
+    .comment{
+        font-size: 0.75em;
+    }
+
+    .modifComment button{
+        font-size: 0.5em;
+    }
+
+    .modif, .supp, .theme{
+        font-size: 0.75em;
+        margin: 0.25em!important;
+    }
+
+    .formnewpost{
+        width: -webkit-fill-available!important;
+        width: -moz-available!important; 
+    }
+
+    .posts_content h2{
+        text-align: center;
+    }
+
+    .commentButton{
+        align-self: center;
+    }
+    
+}

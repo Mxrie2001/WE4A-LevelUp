@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------
+# Affichage forum de message instantanés
+--------------------------------------------------------------*/
+
+#messages .forumM{
+	color: white;
+	background-color: #181718;
+	margin: 0.25em;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 10em;
+	padding: 0.5em;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+
+#messages{
+	height: 30em;
+	overflow-y: scroll;
+}
+
+.contentforum{
+	border: #181718 solid 1px;
+	width: 50em;
+	height: 30em;
+	margin-bottom: 4em;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.forumUnit{
+	display: flex;
+	padding-left: 1em;
+}
+
+.forumU{
+	width: 10em;
+}
+
+.sendForum{
+	display: flex;
+	bottom: 0;
+}
+
+.sendForum input{
+	width: 52em;
+	border-bottom-left-radius: 5px;
+}
+
+.sendForum button{
+	border-top-left-radius: 0!important;
+	border-bottom-left-radius: 0!important;
+	border-top-right-radius: 0!important;
+}
+
+
+/*--------------------------------------------------------------
+# Adaptation à la taille de l'écran ordi -> tel
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .contentforum{
+		width: -webkit-fill-available;
+		width: -moz-available; 
+		margin-inline: 1em;
+		font-size: xx-small;
+	}
+
+	.forumConsigne{
+		text-align: center;
+		padding-top: 3em;
+    	margin-inline: 0.5em;
+	}
+}

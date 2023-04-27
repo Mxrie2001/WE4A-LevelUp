@@ -1,0 +1,166 @@
+/*--------------------------------------------------------------
+# Import Police Google font
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+/*--------------------------------------------------------------
+# Affichage du contenu principal de la page
+--------------------------------------------------------------*/
+
+main{
+    align-items: center;
+}
+
+
+/*--------------------------------------------------------------
+# Affichage formulaires d'inscription et de connection 
+--------------------------------------------------------------*/
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.PS{
+    margin-top: 1em;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+form{
+    border: 0.25em solid black;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.LoginForm form{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.formulaire .imgreg{
+    height: 50.5em;
+    width: 40em;
+    background-image: url(../img/baniereRegister.jpg);
+    background-size: 40em 50.5em;
+    background-position-x: 80%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.formulaire .imgcon{
+    height: 50.5em;
+    width: 40em;
+    background-image: url(../img/baniereLogin.jpg);
+    background-size: 40em 50.5em;
+    background-position-x: 80%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.LoginForm img{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnCo{
+    background-color: #efa236;
+}
+
+.btnRe{
+    background-color: red;
+}
+
+.formulaire button{
+    padding: 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1{
+    align-self: center;
+}
+
+.help a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.help img{
+    width: 2em;
+    height: 2em;
+    border-radius: 5px;
+    padding-right: 0.5em;
+}
+
+.alert{
+    color: red;
+}
+
+
+/*--------------------------------------------------------------
+# Adaptation à la taille de l'écran ordi -> tel
+--------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    .homecatname{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .homecatname{
+        display: block;
+    }
+    .imgconnect{
+        display: none;
+    }
+    form{
+        height: fit-content;
+        width: -webkit-fill-available;
+        width: -moz-available; 
+        margin: 1em;
+    }
+
+    h2{
+        padding-top: 2em;
+    }
+
+    .formulaire{
+        width: -webkit-fill-available;
+        width: -moz-available; 
+    }
+}

@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+# Affichage du contenu principal de la page
+--------------------------------------------------------------*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*--------------------------------------------------------------
+# Affichage et disposition des infos de mon compte
+--------------------------------------------------------------*/
+.compteContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.25em solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.comptePP{
+    border-right: 0.25em solid black;
+}
+
+.comptePP img{
+    height: 10em;
+    padding: 2em;
+}
+
+.compteInfo{
+    padding: 2em;
+}
+
+.color{
+    width: 2em;
+    height: 2em;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    padding-bottom: 0.5em;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn a, .btn button{
+    color: black;
+    background-color: #efa236;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn a i{
+    margin-left: 1em;
+}
+
+/*--------------------------------------------------------------
+# Affichage formulaires de modification des infos de mon compte
+--------------------------------------------------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+    border: 0.25em solid black;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+
+.mdp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: red;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.transparent input{
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+.alert{
+    color: red;
+    padding: 1em;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+
+/*--------------------------------------------------------------
+# Adaptation à la taille de l'écran ordi -> tel
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    
+    main{
+        margin: 0;
+        margin-top: 6em;
+    }
+
+    h2{
+        padding-top: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .compteContainer{
+        flex-direction: column;
+        margin: 1em;
+        width: -webkit-fill-available;
+        width: -moz-available; 
+    }
+
+    .comptePP{
+        border-right: none;
+        border-bottom: 0.25em solid black;
+    }
+    form{
+        margin: 1em;
+        width: -webkit-fill-available;
+        width: -moz-available; 
+    }
+
+    .compteInfo{
+        font-size: 0.80em;
+    }
+}
